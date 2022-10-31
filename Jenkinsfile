@@ -11,16 +11,6 @@ pipeline {
                 checkout scm
             }
         }
-        stage('BuildWAR') {
-            steps {
-            
-            	dir('645HW2') {
-            		echo 'Creating the Jar ...'
-					sh 'java -version'
-					sh 'jar -cvf Hw1.war *'
-            	}
-            }
-        }
         
         stage("Build image") {
             steps {
