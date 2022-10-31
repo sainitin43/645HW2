@@ -41,7 +41,7 @@ pipeline {
 			steps{
 				sh 'kubectl config view'
 				sh "kubectl get deployments"
-				sh "kubectl set image deployment/swe645hw2dep container-0= sainitin43/stu_sur:${env.BUILD_ID}"
+				sh "kubectl set image deployment/swe645hw2dep container-0=sainitin43/stu_sur:${env.BUILD_ID}"
 			}
 		}
     }    
