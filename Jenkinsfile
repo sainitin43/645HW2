@@ -25,7 +25,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    ourapp = docker.build("sainitin43/stu_survey:${env.BUILD_ID}")
+                    ourapp = docker.build("sainitin43/stu_sur:${env.BUILD_ID}")
                 }
             }
         }
